@@ -1,0 +1,206 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.custom {
+  background-color: #6497b1 !important;
+}
+.custom-text {
+  color: #6497b1 !important;
+}
+
+.custom.lighten-1 {
+  background-color: #b3cde0 !important;
+}
+.custom-text.text-lighten-1 {
+  color: #b3cde0 !important;
+}
+
+.custom.darken-1 {
+  background-color: #4b86b4 !important;
+}
+
+.custom-text.text-darken-1 {
+  color: #4b86b4 !important;
+}
+
+.custom.darken-2 {
+  background-color: #011f4b !important;
+}
+
+.custom-text.text-darken-2 {
+  color: #011f4b !important;
+}
+
+.almost-black{
+  background-color: #1e1e1e !important;
+}
+.almost-black-text{
+  color: #1e1e1e !important;
+}
+
+.gray {
+  background-color: #1a1a1a !important;
+}
+
+.gray-text{
+  color: #1a1a1a !important;
+}
+.gray.lighten-1 {
+  background-color: #4a4a4a !important;
+}
+
+.gray-text.text-lighten-1{
+  color: #4a4a4a !important;
+}
+
+.gray.lighten-2{
+  background-color: #969696 !important;
+}
+.gray-text.text-lighten-2{
+  color: #969696 !important;
+}
+.gray.darken-1{
+  background-color: #333333 !important;
+}
+.gray-text.text-draken-1{
+  color: #333333 !important;
+}
+
+.active-link {
+  background-color: #b3cde0 !important;
+}
+
+.tabs .tab a:hover {
+  color: #b3cde0;
+}
+
+.tabs .tab a {
+  color: white;
+}
+
+h3, h5{
+  text-align: center;
+}
+
+.collapsible-header {
+  display: block;
+  cursor: pointer;
+  min-height: 3rem;
+  line-height: 3rem;
+  padding: 0 1rem;
+  background-color: #6497b1;
+  border-bottom: 1px solid #ddd;
+}
+
+.collapsible-header.active {
+  display: block;
+  cursor: pointer;
+  min-height: 3rem;
+  line-height: 3rem;
+  padding: 0 1rem;
+  background-color: #b3cde0;
+  border-bottom: 1px solid #ddd;
+}
+
+.secondary-content {
+  color: #005b96;
+}
+
+.tabs .indicator {
+  position: absolute;
+  bottom: 0;
+  height: 5px;
+  background-color: #b3cde0;
+  will-change: left, right;
+}
+
+::-webkit-input-placeholder {
+  color: #8b9dc3;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #8b9dc3;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #8b9dc3;
+}
+
+:-ms-input-placeholder {
+  color: #8b9dc3;
+}
+
+.collection {
+    margin: 0.5rem 0 1rem 0;
+    /* border: 1px solid #e0e0e0; */
+    /*border-radius: 2px;*/
+    overflow: hidden;
+    position: relative;
+}
+
+header, main, footer {
+  padding-left: 140px;
+}
+
+@media only screen and (max-width : 992px) {
+  header, main, footer {
+    padding-left: 0;
+  }
+}
