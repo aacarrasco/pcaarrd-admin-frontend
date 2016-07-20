@@ -11,4 +11,4 @@
             $scope.categories = categories.data.items;
           });
       });
-})();
+})(); 
