@@ -28,7 +28,7 @@
     <link href="bower_components/gentelella/build/css/custom.min.css" rel="stylesheet">
   </head>
 
-  <body class="nav-md">
+  <body class="nav-md" ng-app="app">
     <div class="container body">
       <div class="main_container">
         <div class="col-md-3 left_col">
@@ -85,40 +85,57 @@
                     </a>
                     <ul class="nav child_menu">
                       <li>
-                        <a>Technologies<span class="fa fa-chevron-down"></span></a>
+                        <a>Technology<span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
                           <li class="sub_menu">
-                            <a href="level2.html">View Technologies</a>
+                            <a href="/#/view-technologies">View Technologies</a>
                           </li>
                           <li>
-                            <a href="#level2_1">Description</a>
+                            <a href="/#/add-technologies">Add Technology</a>
                           </li>
                           <li>
-                            <a href="#level2_1">Objectives</a>
+                            <a href="/#/edit-technologies">Edit Technology</a>
                           </li>
                           <li>
-                            <a href="#level2_1">Benefits</a>
+                            <a href="/#/remove-technologies">Remove Technology</a>
                           </li> 
-                          <li>
-                            <a href="#level2_2">Beneficiaries</a>
-                          </li>
-                          <li>
-                            <a href="#level2_2">Locations</a>
-                          </li>
-                          <li>
-                            <a href="#level2_2">Partner Institutions</a>
-                          </li>
-                          <li>
-                            <a href="#level2_2">Images</a>
-                          </li>
                         </ul>
                       </li>
                       <li>
-                        <a href="">Categories</a>
+                        <a>Category<span class="fa fa-chevron-down"></span></a>
+                        <ul class="nav child_menu">
+                          <li class="sub_menu">
+                            <a href="/#/view-categories">View Categories</a>
+                          </li>
+                          <li>
+                            <a href="/#/add-categories">Add Category</a>
+                          </li>
+                          <li>
+                            <a href="/#/edit-categories">Edit Category</a>
+                          </li>
+                          <li>
+                            <a href="/#/remove-categories">Remove Category</a>
+                          </li> 
+                        </ul>
                       </li>
                       <li>
-                        <a href="">Commodities</a>
+                        <a>Commodity<span class="fa fa-chevron-down"></span></a>
+                        <ul class="nav child_menu">
+                          <li class="sub_menu">
+                            <a href="/#/view-commodities">View Commodities</a>
+                          </li>
+                          <li>
+                            <a href="/#/add-commodities">Add Commodity</a>
+                          </li>
+                          <li>
+                            <a href="/#/edit-commodities">Edit Commodity</a>
+                          </li>
+                          <li>
+                            <a href="/#/remove-commodities">Remove Commodity</a>
+                          </li> 
+                        </ul>
                       </li>
+                      
                     </ul>
                   </li>
                 </ul>
@@ -245,7 +262,7 @@
         <!-- /top navigation -->
       
         <!-- page content -->
-        <div class="right_col" role="main" ng-app="">
+        <div class="right_col" role="main" ng-view="">
           
         </div>
         <!-- /page content -->
@@ -261,6 +278,10 @@
       </div>
     </div>
 
+    <!-- Angular JS -->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <!-- Angular Route -->
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
     <!-- jQuery -->
     <script src="bower_components/gentelella/vendors/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
@@ -298,5 +319,26 @@
 
     <!-- Custom Theme Scripts -->
     <script src="bower_components/gentelella/build/js/custom.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="app.js"></script>
+
+    <!-- Services -->
+    <script src="services/category.service.js"></script>
+    <script src="services/commodity.service.js"></script>
+    <script src="services/technology.service.js"></script>
+    <script src="services/objective.service.js"></script>
+    <script src="services/benefit.service.js"></script>
+    <script src="services/beneficiary.service.js"></script>
+    <script src="services/location.service.js"></script>
+    <script src="services/partner.service.js"></script>
+    <script src="services/image.service.js"></script>
+    
+    <!-- Controllers -->
+    <script src="controllers/home.controller.js"></script>
+    <script src="controllers/category-settings.controller.js"></script>
+    <script src="controllers/commodity-settings.controller.js"></script>
+    <script src="controllers/technology-settings.controller.js"></script>
+    
   </body>
 </html>
