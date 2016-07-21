@@ -10,7 +10,8 @@
     <title>PCAARRD-KMS Admin | </title>
 
     <!-- Bootstrap -->
-    <link href="bower_components/gentelella/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="bower_components/gentelella/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="bower_components/gentelella/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- iCheck -->
@@ -34,7 +35,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <!-- sidenav title -->
-            <div class="navbar nav_title" style="border:0;">
+            <div class="navbar nav_title menu_fixed" style="border:0;">
               <a href="#!" class="site_title">
                 <i class="fa fa-home"></i>
                 <span>PCAARRD-KMS</span>
@@ -93,12 +94,6 @@
                           <li>
                             <a href="/#/add-technologies">Add Technology</a>
                           </li>
-                          <li>
-                            <a href="/#/edit-technologies">Edit Technology</a>
-                          </li>
-                          <li>
-                            <a href="/#/remove-technologies">Remove Technology</a>
-                          </li> 
                         </ul>
                       </li>
                       <li>
@@ -110,12 +105,6 @@
                           <li>
                             <a href="/#/add-categories">Add Category</a>
                           </li>
-                          <li>
-                            <a href="/#/edit-categories">Edit Category</a>
-                          </li>
-                          <li>
-                            <a href="/#/remove-categories">Remove Category</a>
-                          </li> 
                         </ul>
                       </li>
                       <li>
@@ -127,12 +116,6 @@
                           <li>
                             <a href="/#/add-commodities">Add Commodity</a>
                           </li>
-                          <li>
-                            <a href="/#/edit-commodities">Edit Commodity</a>
-                          </li>
-                          <li>
-                            <a href="/#/remove-commodities">Remove Commodity</a>
-                          </li> 
                         </ul>
                       </li>
                       
@@ -268,7 +251,7 @@
         <!-- /page content -->
 
         <!-- footer content -->
-        <footer>
+        <footer class="footer_fixed">
           <div class="pull-right">
             Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
           </div>
@@ -282,10 +265,15 @@
     <script src="bower_components/angular/angular.min.js"></script>
     <!-- Angular Route -->
     <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <!-- Angular Animate -->
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <!-- Angular Touch -->
+    <script src="bower_components/angular-touch/angular-touch.min.js"></script>
     <!-- jQuery -->
     <script src="bower_components/gentelella/vendors/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
-    <script src="bower_components/gentelella/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/gentelella/vendors/bootstrap/dist/js/bootstrap.min.js"></script> 
+    <!-- <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script> -->
     <!-- FastClick -->
     <script src="bower_components/gentelella/vendors/fastclick/lib/fastclick.js"></script>
     <!-- NProgress -->
@@ -340,5 +328,6 @@
     <script src="controllers/commodity-settings.controller.js"></script>
     <script src="controllers/technology-settings.controller.js"></script>
     
+
   </body>
 </html>
