@@ -58,6 +58,19 @@ var apiUrl = 'http://api.sipag-fiesta.loc:8000';
             });
 
           return deferred.promise;
+        },
+
+        postTechnology: function(technology) {
+          var deferred = $q.defer();
+          $http.post(apiUrl + '/technology/', category)
+            .success(function(data) {
+              deferred.resolve(data);
+            })
+            .error(function(err) {
+              deferred.reject(err);
+            });
+
+          return deferred.promise;
         }
                   
       }

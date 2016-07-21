@@ -32,7 +32,33 @@ var apiUrl = 'http://api.sipag-fiesta.loc:8000';
             });
 
           return deferred.promise;
-        }
+        },
+
+        postCommodity: function(commodity) {
+          var deferred = $q.defer();
+          $http.post(apiUrl + '/commodities/', commodity)
+            .success(function(data) {
+              deferred.resolve(data);
+            })
+            .error(function(err) {
+              deferred.reject(err);
+            });
+
+          return deferred.promise;
+        },
+
+        deleteCommodity: function(commodity) {
+          var deferred = $q.defer();
+          $http.delete(apiUrl + '/commodities/'+ commodity.commodity_id)
+            .success(function(data) {
+              deferred.resolve(data);
+            })
+            .error(function(err) {
+              deferred.reject(err);
+            });
+
+          return deferred.promise;
+        } 
 
                   
       }
