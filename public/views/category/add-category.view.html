@@ -42,23 +42,23 @@
         </div>
         <div class="x_content">
           <br />
-          <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+          <form id="demo-form2" novalidate class="form-horizontal form-label-left" name="form">
 
             <!-- Category Name -->
             <div class="form-group">
-              <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Name <span class="required">*</span>
+              <label class="control-label col-md-3 col-sm-3 col-xs-12" for="category-name">Name <span class="required">*</span>
               </label>
               <div class="col-md-6 col-sm-6 col-xs-12">
-                <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12" ng-model="category.addName">
+                <input type="text" id="category-name" required="required" class="form-control col-md-7 col-xs-12" ng-model="category.name">
               </div>
             </div>
             
             <!-- Category Thumbnail -->
             <div class="form-group">
-              <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Thumbnail <span class="required">*</span>
+              <label class="control-label col-md-3 col-sm-3 col-xs-12" for="category-thumbnail">Thumbnail
               </label>
               <div class="col-md-6 col-sm-6 col-xs-12">
-                <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12" ng-model="category.addThumbnail">
+                <input type="file" id="category-thumbnail" required="required" class="form-control col-md-7 col-xs-12" ng-model="category.thumbnail">
               </div>
             </div>
 
@@ -66,10 +66,12 @@
             <div class="ln_solid"></div>
             <div class="form-group">
               <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                <button type="submit" class="btn btn-primary">Cancel</button>
-                <button type="submit" class="btn btn-success">Submit</button>
+                <button type="submit" class="btn btn-primary" ng-click="reset(form)">Cancel</button>
+                <button type="submit" class="btn btn-success" ng-click="addCategory(category)">Submit</button>
               </div>
             </div>
+
+            <!-- <pre>category = {{category | json}}</pre> -->
 
           </form>
         </div>

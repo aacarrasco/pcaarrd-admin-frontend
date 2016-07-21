@@ -1,0 +1,182 @@
+<div class="">
+  <div class="page-title">
+    <div class="title_left">
+      <h3>Technologies</h3>
+    </div>
+
+    <div class="title_right">
+      <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search for...">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">Go!</button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="clearfix"></div>
+
+  <div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <div class="x_panel">
+        <div class="x_title">
+          <h2>Add Technology <small></small></h2>
+          <ul class="nav navbar-right panel_toolbox">
+            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Settings 1</a>
+                </li>
+                <li><a href="#">Settings 2</a>
+                </li>
+              </ul>
+            </li>
+            <li><a class="close-link"><i class="fa fa-close"></i></a>
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+        <div class="x_content">
+          <br />
+          <form id="demo-form2" novalidate class="form-horizontal form-label-left" name="form">
+
+            <!-- Technology Title-->
+            <div class="form-group">
+              <label class="control-label col-md-3 col-sm-3 col-xs-12" for="technology-title">Title <span class="required">*</span>
+              </label>
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <input type="text" id="technology-title" required="required" class="form-control col-md-7 col-xs-12" ng-model="technology.title" placeholder="Enter Title">
+              </div>
+            </div>
+            
+            <!-- Technology Commodity -->
+            <div class="form-group">
+              <label class="control-label col-md-3 col-sm-3 col-xs-12" for="technology-commodity">Commodity <span class="required">*</span></label>
+              <div class="col-md-6 col-sm-9 col-xs-12" >
+                <select class="form-control" ng-model="technology.commodity" id="technology-commodity" >
+                  <option  ng-repeat="commodity in commodities">{{commodity.name}}</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Technology Description -->
+            <div class="form-group">
+              <label class="control-label col-md-3 col-sm-3 col-xs-12" for="technology-description">Description <span class="required">*</span> </label>
+              <div class="col-md-6 col-sm-9 col-xs-12">
+                <textarea id="technology-description" class="resizable_textarea form-control" placeholder="Enter description" ng-model="technology.description"></textarea>
+              </div>
+            </div>
+
+            <!-- Technology Objective Intro -->
+            <div class="form-group">
+              <label class="control-label col-md-3 col-sm-3 col-xs-12" for="technology-objective-intro">Objectives</label>
+              <div class="col-md-6 col-sm-9 col-xs-12">
+                <textarea id="technology-objective-intro" class="resizable_textarea form-control" placeholder="Enter introduction" ng-model="technology.objective_intro"></textarea>
+              </div>
+            </div>
+
+            <!-- Technology Objective -->
+            <div class="form-group">
+              <label class="control-label col-md-3 col-sm-3 col-xs-12" for="technology-objective"></label>
+              <div class="col-md-5 col-sm-9 col-xs-12">
+                <textarea id="technology-objective" class="resizable_textarea form-control" placeholder="Enter objective" ng-model="objectives.objective"></textarea>
+                
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-1">
+                <a href=""><i class="fa fa-plus"></i> Add</a>
+              </div>
+            </div>
+
+            <!-- Technology Benefits -->
+            <div class="form-group">
+              <label class="control-label col-md-3 col-sm-3 col-xs-12" for="technology-benefit">Benefits</label>
+              <div class="col-md-5 col-sm-9 col-xs-12">
+                <textarea id="technology-benefit" class="resizable_textarea form-control" placeholder="Enter benefit" ng-model="benefits.benefit"></textarea>
+                
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-1">
+                <a href=""><i class="fa fa-plus"></i> Add</a>
+              </div>
+            </div>
+
+            <!-- Technology Location -->
+            <div class="form-group">
+              <label class="control-label col-md-3 col-sm-3 col-xs-12" for="technology-location">Locations</label>
+              <div class="col-md-5 col-sm-9 col-xs-12">
+                <textarea id="technology-location" class="resizable_textarea form-control" placeholder="Enter location" ng-model="locations.location"></textarea>
+                
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-1">
+                <a href=""><i class="fa fa-plus"></i> Add</a>
+              </div>
+            </div>
+
+            <!-- Technology Beneficiaries -->
+            <div class="form-group">
+              <label class="control-label col-md-3 col-sm-3 col-xs-12" for="technology-beneficiary">Target Beneficiaries</label>
+              <div class="col-md-5 col-sm-9 col-xs-12">
+                <textarea id="technology-beneficiary" class="resizable_textarea form-control" placeholder="Enter beneficiary" ng-model="beneficiaries.beneficiary"></textarea>
+                
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-1">
+                <a href=""><i class="fa fa-plus"></i> Add</a>
+              </div>
+            </div>
+
+            <!-- Technology Partners -->
+            <div class="form-group">
+              <label class="control-label col-md-3 col-sm-3 col-xs-12" for="technology-partner">Partners</label>
+              <div class="col-md-5 col-sm-9 col-xs-12">
+                <textarea id="technology-partner" class="resizable_textarea form-control" placeholder="Enter partner" ng-model="partners.partner"></textarea>
+                
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-1">
+                <a href=""><i class="fa fa-plus"></i> Add</a>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-md-3 col-sm-3 col-xs-12" for="technology-image">Images 
+              </label>
+              <div class="col-md-5 col-sm-9 col-xs-12">
+                <input type="file" id="technology-image" required="required" class="form-control col-md-7 col-xs-12" ng-model="technology.image">
+              </div>
+
+              <div class="col-md-1 col-sm-1 col-xs-1">
+                <a href=""><i class="fa fa-plus"></i> Add</a>
+              </div>
+            </div>
+
+           
+
+            <!-- Submit Buttons -->
+            <div class="ln_solid"></div>
+            <div class="form-group">
+              <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                <button type="submit" class="btn btn-primary" ng-click="reset(form)">Cancel</button>
+                <button type="submit" class="btn btn-success" ng-click="addTechnology(technology)">Submit</button>
+              </div>
+            </div>
+
+            <pre>
+technology = {{technology | json}}
+objective = {{objectives | json}}
+benefit = {{benefits | json}}
+beneficiary = {{beneficiaries | json}}
+location = {{locations | json}}
+partner = {{partners | json}}
+            </pre>
+
+          </form>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
