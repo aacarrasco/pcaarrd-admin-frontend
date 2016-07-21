@@ -19,14 +19,6 @@
           "controller": "CategorySettingsCtrl",
           "templateUrl": "views/category/add-category.view.html"
         })
-        .when('/edit-categories', {   
-          "controller": "CategorySettingsCtrl",
-          "templateUrl": "views/category/edit-category.view.html"
-        })
-        .when('/remove-categories', {   
-          "controller": "CategorySettingsCtrl",
-          "templateUrl": "views/category/remmove-category.view.html"
-        })
         .when('/view-commodities', {   
           "controller": "CommoditySettingsCtrl",
           "templateUrl": "views/commodity/view-commodity.view.html"
@@ -35,29 +27,17 @@
           "controller": "CommoditySettingsCtrl",
           "templateUrl": "views/commodity/add-commodity.view.html"
         })
-        .when('/edit-commodities', {   
-          "controller": "CommoditySettingsCtrl",
-          "templateUrl": "views/commodity/edit-commodity.view.html"
-        })
-        .when('/remove-commodities', {   
-          "controller": "CommoditySettingsCtrl",
-          "templateUrl": "views/commodity/remmove-commodity.view.html"
-        })
         .when('/view-technologies', {   
-          "controller": "CommoditySettingsCtrl",
+          "controller": "TechnologySettingsCtrl",
           "templateUrl": "views/technology/view-technology.view.html"
         })
         .when('/add-technologies', {   
-          "controller": "CommoditySettingsCtrl",
+          "controller": "TechnologySettingsCtrl",
           "templateUrl": "views/technology/add-technology.view.html"
         })
-        .when('/edit-technologies', {   
-          "controller": "CommoditySettingsCtrl",
-          "templateUrl": "views/technology/edit-technology.view.html"
-        })
-        .when('/remove-technologies', {   
-          "controller": "CommoditySettingsCtrl",
-          "templateUrl": "views/technology/remmove-technology.view.html"
+        .when('/technologies/:id', {   
+          "controller": "TechnologySettingsCtrl",
+          "templateUrl": "views/technology/one-technology.view.html"
         })
         .otherwise({"redirectTo": "home"});      
     }
